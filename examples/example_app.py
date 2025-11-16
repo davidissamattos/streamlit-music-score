@@ -14,7 +14,7 @@ st.write(
 )
 st.markdown("OSMD play functionality is only available for sponsors at the moment. As soon as it is released to the public this demo will be updated also to include play controls.")
 
-score_file = Path("examples/twinkle.musicxml")
+score_file = Path("twinkle.musicxml")
 
 st.subheader("Example Score: Twinkle Twinkle Little Star")
 st.markdown("Reading the MusicXML from a file and rendering it. The file needs to be a valid MusicXML format.")
@@ -44,7 +44,7 @@ st.subheader("Using music21 to load files")
 st.write(
     "In this final example you can pass the music21 stream object directly and transpose it to any major key."
 )
-abc_file = Path("examples/scale.abc")
+abc_file = Path("scale.abc")
 base_score = music21.converter.parse(abc_file)
 with st.expander("Sample source (ABC notation)", expanded=False):
     st.code(abc_file.read_text(encoding="utf-8"), language="abc")

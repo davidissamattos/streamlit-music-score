@@ -15,6 +15,7 @@ OSMD play functionality is only available for sponsors at the moment. As soon as
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+cd 
 streamlit run example_app.py
 ```
 
@@ -24,7 +25,7 @@ upload your own MusicXML.
 ## Usage
 
 ```python
-from streamlit_music_score import music_score
+from streamlit_music_score import music_score, music_score_file, music_score_stream
 
 xml = "<score-partwise>...</score-partwise>"  # MusicXML string from music21
 music_score(xml, height=540)
